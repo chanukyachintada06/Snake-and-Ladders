@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Snake & Ladder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="game-header">
+        <h1>Snake n Ladders</h1>
+        <nav class="header-nav">
+            <a href="https://github.com/chanukyachintada06" target="_blank">GitHub</a>
+            <a href="https://chanukyachintada.vercel.app/" target="_blank">Website</a>
+            <a href="#" onclick="window.print()">Download</a>
+        </nav>
+    </header>
+
+    <main class="content-wrapper">
+        <div class="game-container">
+            <div class="sidebar">
+                <h2 id="turn-indicator">Waiting...</h2>
+                <div id="dice-container">
+                    <div id="dice" class="dice-idle">?</div>
+                </div>
+                <button id="roll-btn" onclick="handleRoll()" disabled>🎲 Roll Dice</button>
+                <div id="player-list"></div>
+            </div>
+            <canvas id="board" width="600" height="600"></canvas>
+        </div>
+
+        <div id="win-overlay" class="win-overlay">
+            <h1 id="winner-text">PLAYER 1 WINS!</h1>
+            <button onclick="location.reload()" style="padding: 15px 40px; font-size: 1.5rem;">Play Again 🔄</button>
+        </div>
+
+        <div id="setup-overlay" class="overlay">
+            <div class="setup-modal">
+                <h1>Game Setup</h1>
+                <div id="selection-step">
+                    <p>How many players?</p>
+                    <button onclick="showNameInputs(2)">2 Players</button>
+                    <button onclick="showNameInputs(3)">3 Players</button>
+                    <button onclick="showNameInputs(4)">4 Players</button>
+                </div>
+                <div id="names-step" style="display: none;">
+                    <p>Enter Player Names:</p>
+                    <div id="name-inputs-container"></div>
+                    <button class="start-game-btn" onclick="startGame()">Start Game 🚀</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="game-footer">
+        <div class="footer-content">
+            <p>Created with ❤️ by <strong>Chanukya Chintada</strong></p>
+            <div class="footer-links">
+                <a href="https://chanukyachintada.vercel.app/" target="_blank">🌐 Website</a>
+                <a href="https://github.com/chanukyachintada06" target="_blank">🐙 GitHub</a>
+                <a href="https://chanukyachintada.vercel.app/#contact" target="_blank">📧 Contact for Issues</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Chanukya Chintada. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>
