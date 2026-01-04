@@ -112,6 +112,7 @@ You can access the project directly in your browser since it has already been de
 
 **Alternative Method:**
 - Open the live website directly using the link below:
+- https://chanukyachintada06.github.io/Snake-and-Ladders/
 
 
 2. Clone the repository
