@@ -180,4 +180,5 @@ rollBtn.addEventListener('pointerdown', (e) => {
     if (!isAnimating && !rollBtn.disabled) {
         handleRoll();
     }
+
 });
