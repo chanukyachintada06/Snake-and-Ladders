@@ -117,7 +117,7 @@ You can access the project directly in your browser since it has already been de
 
 2. Clone the repository
    ```bash
-   git clone https://github.com/your-username/snake-and-ladders-web.git
+   git clone https://github.com/chanukyachintada06/Snake-and-Ladders
 
 
 
